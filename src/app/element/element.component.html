@@ -1,0 +1,18 @@
+<a routerLink="/element/{{element.atomicNumber}}" routerLinkActive="Active">
+    <div class="element-bg bg-{{element.groupClass}}"
+        [ngClass]="{'custom-element': element.Custom}"
+        (mouseover)="onHover()" >
+        <span class="atomic-number">
+            {{element.atomicNumber}}
+        </span>
+        <span class="atomic-symbol">
+            {{element.symbol}}
+        </span>
+        <span class="atomic-mass">
+            {{element.atomicMass}}
+        </span>
+        <span class="atomic-name">
+            {{element.name}}
+        </span>
+    </div>
+</a>

@@ -1,0 +1,79 @@
+<div class="container-fluid">
+    <div class="row header-con">
+        <div class="col-12">
+            <div class="heading">
+                <h1>The periodic table</h1>
+                <h1>of the elements</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-con col 12">
+
+        <div class="element-col">
+            <div class="element-box" *ngFor="let element of getElementsByRange(1, 2)">
+                <app-element [element]="element"></app-element>
+            </div>
+        </div>
+        <div class="element-col">
+            <div class="element-box" *ngFor="let element of getElementsByRange(3, 10)">
+                <app-element [element]="element"></app-element>
+            </div>
+        </div>
+        <div class="element-col">
+            <div class="element-box" *ngFor="let element of getElementsByRange(11, 18)">
+                <app-element [element]="element"></app-element>
+            </div>
+        </div>
+        <div class="element-col">
+            <div class="element-box" *ngFor="let element of getElementsByRange(19, 36)">
+                <app-element [element]="element"></app-element>
+            </div>
+        </div>
+        <div class="element-col">
+            <div class="element-box" *ngFor="let element of getElementsByRange(37, 54)">
+                <app-element [element]="element"></app-element>
+            </div>
+        </div>
+
+        <div class="element-col">
+            <div class="element-box" *ngFor="let element of getElementsByRange(55, 56)">
+                <app-element [element]="element"></app-element>
+            </div>
+            <div class="element-box">
+                <app-element [element]="LaLuCombination"></app-element>
+            </div>
+            <div class="element-box" *ngFor="let element of getElementsByRange(72, 86)">
+                <app-element [element]="element"></app-element>
+            </div>
+        </div>
+
+        <div class="element-col">
+            <div class="element-box" *ngFor="let element of getElementsByRange(87, 88)">
+                <app-element [element]="element"></app-element>
+            </div>
+            <div class="element-box">
+                <app-element [element]="AcLrCombination"></app-element>
+            </div>
+            <div class="element-box" *ngFor="let element of getElementsByRange(104, 118)">
+                <app-element [element]="element"></app-element>
+            </div>
+        </div>
+
+        <div class="misc-element-con">
+            <div class="element-col">
+                <div class="element-box" *ngFor="let element of getElementsByRange(57, 71)">
+                    <app-element [element]="element"></app-element>
+                </div>
+            </div>
+            <div class="element-col">
+                <div class="element-box" *ngFor="let element of getElementsByRange(89, 103)">
+                    <app-element [element]="element"></app-element>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

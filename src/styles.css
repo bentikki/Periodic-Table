@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+html, body {
+    /* background-color: #2f3640; */
+    /* background-color: #3d3d3d; */
+    background-color: #535c68;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

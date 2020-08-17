@@ -1,0 +1,59 @@
+.container-fluid {
+    min-width: 720px;
+    max-width: 1920px;
+}
+
+.header-con {
+    padding: 20px 0;
+    height: 3vh;
+}
+.heading {
+    width: 80%;
+}
+.header-con h1 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 6px 6px 2px rgba(0,0,0, 1);
+    font-weight: bold;
+    /* font-family: Impact, 'Franklin Gothic Medium', sans-serif; */
+}
+.header-con h1:first-child {
+    font-size: 78px;
+}
+.header-con h1:second-child {
+    font-size: 58px;
+}
+
+
+.table-con {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.table-con .element-col {
+    width: 100%;
+    display: inline-block;
+    height: 9.2vh;
+    position: relative;
+}
+
+.table-con .element-box {
+    width: 5.55555555556%;
+    min-width: 100px;
+    float: left;
+}
+
+.table-con > .element-col:first-child > .element-box:nth-child(2) {
+    float: right;
+}
+.table-con > .element-col:nth-child(2) > .element-box:nth-child(3),
+.table-con > .element-col:nth-child(3) > .element-box:nth-child(3) {
+    margin-left: 55.5%;
+}
+
+.misc-element-con {
+    margin-top: 30px;
+}
+.misc-element-con .element-col .element-box:first-child{
+    margin-left: calc(5.55555555556% * 3); 
+}
